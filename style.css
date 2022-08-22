@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --branco-principal: #ffffff;
+  --cinza-secundario: #c0c0c0;
+  --botao-azul: #167bf7;
+  --cor-fundo: #00030c;
+}
+body {
+  background-color: var(--cor-fundo);
+  color: var(--branco-principal);
+  font-size: 16px;
+  font-weight: 400;
+}
+.principal {
+  background-image: url(assets/Background.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  align-items: center;
+}
+.container__titulo{
+    font-size: 28px;
+}
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.container__botao{
+    background-color: var(--botao-azul);
+    border-radius: 8px;
+    color: var(--branco-principal);
+    padding: 1em;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+.botao__secundario{
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+    color: var(--branco-principal);
+    padding: 1em;
+    text-decoration: none;
+    display: block;
+}
+.container__aviso{
+    color: var(--cinza-secundario);
+    font-size: 12px;
+}
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
+.container__caixa{
+    margin: 0 6em;
+}
+.secundario__imagem{
+  width: 80%;
+}
+.secundario{
+  align-items: center;
+  margin:0 10rem
+}
+.descricao__titulo{
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 0.1rem;
+}
+.descrição__texto{
+  color: var(--cinza-secundario);
+}
+.secundario__botao{
+  display: inline-block;
+  margin-top: 1em;
+}
+.container__descricao{
+  padding: 2em;
+}
+.dispositivos{
+  font-weight: bold;
+  text-align: center;
+  font-size: 32px;
+}
+.dispositivos__lista{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding:1.5em
+  
+}
+.dispositivos__lista li{
+  list-style: none;
+}
+footer{
+  text-align: center;
+  margin-top: 10em;
+}
+footer img{
+  padding-bottom: 2em;
+}
+.lista-footer{
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding:1em;
+}
+.item__footer a {
+  text-decoration: none;
+  color: var(--branco-principal);
+  font-size: 16px;
+}
+footer p {
+  padding: 1em;
+  color: var(--cinza-secundario);
+  font-size: 14px;
+}
